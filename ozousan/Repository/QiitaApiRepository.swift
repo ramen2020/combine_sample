@@ -11,52 +11,28 @@ import Combine
 
 final class QiitaApiRepository {
 
-//    let baseURL = "https://qiita.com/api/v2/items"
-        
-    static func fetchArticles() -> AnyPublisher<[Article], AFError> {
-        let decoder = JSONDecoder()
-        let baseURL = "https://qiita.com/api/v2/items"
-        let result = AF.request(
-            baseURL,
+    static func fetchArticles() -> AnyPublisher<[Qiita], AFError> {
+        let target_url = "https://qiita.com/api/v2/items"
+        return AF.request(
+            target_url,
             method: .get
         )
-        .publishDecodable(type: [Article].self, decoder: decoder)
+        .publishDecodable(type: [Qiita].self, decoder: JSONDecoder())
         .value()
         .eraseToAnyPublisher()
     
-        return result
     }
     
-    static func fetchQiitaArticlesBySearchWord(searchWord: String) -> AnyPublisher<[Article], AFError> {
-        let baseURL = "https://qiita.com/api/v2/items"
-        let parameters = ["query": searchWord]
-        let decoder = JSONDecoder()
-        let result = AF.request(
-            baseURL,
+    static func fetchQiitaArticlesBySearchWord(searchWord: String) -> AnyPublisher<[Qiita], AFError> {
+        let target_url = "https://qiita.com/api/v2/items"
+        return AF.request(
+            target_url,
             method: .get,
-            parameters: parameters
+            parameters: ["query": searchWord]
         )
-        .publishDecodable(type: [Article].self, decoder: decoder)
+        .publishDecodable(type: [Qiita].self, decoder: JSONDecoder())
         .value()
         .eraseToAnyPublisher()
-
-        return result
-    }
-    
-    static func fetchQiitaArticlesByTag(tag: String) -> AnyPublisher<[Article], AFError> {
-        let baseURL = "https://qiita.com/api/v2/tags/\(tag)/items"
-        let decoder = JSONDecoder()
-        print(baseURL)
-        let result = AF.request(
-            baseURL,
-            method: .get
-        )
-        .publishDecodable(type: [Article].self, decoder: decoder)
-        .value()
-        .eraseToAnyPublisher()
-
-        return result
-    }
-
-}
+        
+    }}
 

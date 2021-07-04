@@ -1,19 +1,28 @@
+//
+//  QiitaContentView.swift
+//  SwiftUI Architecture
+//
+//  Created by 宮本光直 on 2021/06/23.
+//
+
 import SwiftUI
 
 struct QiitaContentView: View {
-    @State private var isLoading = false // 読み込み中のローディング
-    @State private var isModalShow: Bool = false // modal遷移のflg
     
-    @ObservedObject var qiitaViewModel: QiitaViewModel
+    @EnvironmentObject var qiitaViewModel: QiitaViewModel
     
     var body: some View {
         VStack {
             // 検索bar
-            SearchTextField(searchWord: $qiitaViewModel.searchWord, qiitaViewModel: qiitaViewModel)
+            QiitaSearchTextField(searchWord: $qiitaViewModel.searchWord, qiitaViewModel: qiitaViewModel)
             // cellのview
-            QiitaCell(articleData: qiitaViewModel.articles)
+            QiitaCell(
+                qiitaViewModel: qiitaViewModel,
+                articles: qiitaViewModel.articles,
+                favoriteArticlesIds: qiitaViewModel.favoriteArticlesIds
+            )
         }
-        // 画面読み込み時の処理 viewdidload
+        // 画面読み込み時の処理
         .onAppear{
             self.qiitaViewModel.fetchArticles()
         }
@@ -25,11 +34,11 @@ struct QiitaContentView: View {
 }
 
 // PreviewProvider
-struct QiitaContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        QiitaContentView(qiitaViewModel: QiitaViewModel())
-    }
-}
+//struct QiitaContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        QiitaContentView().environmentObject(QiitaViewModel())
+//    }
+//}
 
 extension UIApplication {
     // 背景タップでキーボード閉じる処理

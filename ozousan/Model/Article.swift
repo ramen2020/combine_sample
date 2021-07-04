@@ -7,13 +7,24 @@
 
 import Foundation
 
-struct Article: Codable {
+struct Qiita: Codable, Identifiable{
+    let id: String
     let url: String
     let title: String
-    let user: User
+//    let user: QiitaAPIUser
 }
 
-struct User: Codable {
-    let name: String
-    let profile_image_url: String
-}
+//struct QiitaAPIUser: Codable {
+//    let name: String
+//    let profile_image_url: String
+//}
+
+//extension QiitaAPI {
+//  init(FavoriteQiitaDB: FavoriteQiitaDB) {
+//    id = FavoriteQiitaDB.id
+//    url = FavoriteQiitaDB.url
+//    title = FavoriteQiitaDB.title
+////    user = FavoriteQiitaDB.
+////    number = FavoriteQiitaDB.number
+//  }
+//}

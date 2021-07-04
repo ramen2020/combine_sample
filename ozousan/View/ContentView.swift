@@ -1,27 +1,37 @@
 //
-//  contetView.swift
-//  ozousan
+//  ContentView.swift
+//  SwiftUI Architecture
 //
-//  Created by 宮本光直 on 2021/06/22.
+//  Created by 宮本光直 on 2021/06/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    
     var body: some View {
         NavigationView {
-            VStack {
-                TabBarView()
+            TabView {
+                QiitaContentView()
+                    .tabItem {
+                        Label("qiita", systemImage: "gamecontroller")
+                    }
+                
+                QiitaFavoriteContentView()
+                    .tabItem {
+                        Label("favorite", systemImage: "star")
+                    }
+                
+                WebView(urlString: "")
+                    .tabItem {
+                        Label("webview", systemImage: "star")
+                    }
             }
-            // header title
-            .navigationBarTitle("Sunshine City", displayMode: .inline)
-            
-            // header button
+            .environmentObject(QiitaViewModel())
+            .navigationBarTitle("Article List", displayMode: .inline)
             .navigationBarItems(
                 trailing: HStack {
                     Button(action: {
-                        print("右のボタン２が押されました。")
+                        //
                     }, label: {
                         Image(systemName: "person.fill")
                             .resizable()
@@ -30,7 +40,8 @@ struct ContentView: View {
                     })
                 })
         }
-    }}
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
