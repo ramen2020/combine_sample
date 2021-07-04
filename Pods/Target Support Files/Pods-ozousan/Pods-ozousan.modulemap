@@ -1,0 +1,6 @@
+framework module Pods_ozousan {
+  umbrella header "Pods-ozousan-umbrella.h"
+
+  export *
+  module * { export * }
+}

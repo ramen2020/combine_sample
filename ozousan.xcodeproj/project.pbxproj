@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66221C4C2681949900BBE8FB /* UiImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66221C4B2681949900BBE8FB /* UiImage.swift */; };
+		6632610D2681E23100CFFD72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632610C2681E23100CFFD72 /* ContentView.swift */; };
+		6632610F2681E26800CFFD72 /* TabBarViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632610E2681E26800CFFD72 /* TabBarViewView.swift */; };
+		663261142681E2ED00CFFD72 /* SecoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663261132681E2ED00CFFD72 /* SecoundView.swift */; };
+		66439CAD267C530B009C3760 /* ozousanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66439CAC267C530B009C3760 /* ozousanApp.swift */; };
+		66439CAF267C530B009C3760 /* QiitaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66439CAE267C530B009C3760 /* QiitaContentView.swift */; };
+		66439CB1267C530C009C3760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66439CB0267C530C009C3760 /* Assets.xcassets */; };
+		66439CB4267C530C009C3760 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66439CB3267C530C009C3760 /* Preview Assets.xcassets */; };
+		66476952268193920017CBCD /* modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66476951268193920017CBCD /* modal.swift */; };
+		66476954268194340017CBCD /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66476953268194340017CBCD /* Indicator.swift */; };
+		6658EB1A2680C357007ED1DD /* URLImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658EB192680C357007ED1DD /* URLImageViewModel.swift */; };
+		668187982682D101000A68A7 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668187972682D101000A68A7 /* ThirdView.swift */; };
+		6681879A2682D114000A68A7 /* FourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668187992682D114000A68A7 /* FourthView.swift */; };
+		6681879C2682DA44000A68A7 /* PixabayAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6681879B2682DA44000A68A7 /* PixabayAPI.swift */; };
+		6681879E2682DAF4000A68A7 /* PixabayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6681879D2682DAF4000A68A7 /* PixabayViewModel.swift */; };
+		668187A02682DB37000A68A7 /* PixabayApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6681879F2682DB37000A68A7 /* PixabayApiRepository.swift */; };
+		668187A526830CE7000A68A7 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 668187A426830CE7000A68A7 /* QGrid */; };
+		668187A8268323B2000A68A7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 668187A7268323B2000A68A7 /* Kingfisher */; };
+		66A2FA79268036180063828E /* QiitaApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2FA78268036180063828E /* QiitaApiRepository.swift */; };
+		66A2FA7F268036B70063828E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2FA7E268036B70063828E /* Article.swift */; };
+		66AA7987268C315800D75775 /* samplecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AA7986268C315800D75775 /* samplecode.swift */; };
+		66B78FB126806BC600D68A0A /* QiitaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B78FB026806BC600D68A0A /* QiitaViewModel.swift */; };
+		66C8D6DF267E00B6001251E7 /* TodoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C8D6DE267E00B6001251E7 /* TodoContentView.swift */; };
+		66CA9DA52682CD2C006B097E /* GridTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CA9DA42682CD2C006B097E /* GridTestView.swift */; };
+		66D828DE2681ABDA009BB56E /* QiitaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D828DD2681ABDA009BB56E /* QiitaCell.swift */; };
+		66D828E02681B3C7009BB56E /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D828DF2681B3C7009BB56E /* SearchTextField.swift */; };
+		9D5FFCA3063F3BC571C957E0 /* Pods_ozousan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A66DB1370C8D1EA3F73C820 /* Pods_ozousan.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30936BE7937057AB12003845 /* Pods-ozousan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ozousan.release.xcconfig"; path = "Target Support Files/Pods-ozousan/Pods-ozousan.release.xcconfig"; sourceTree = "<group>"; };
+		34A5D8F082B07835D060B12D /* Pods-ozousan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ozousan.debug.xcconfig"; path = "Target Support Files/Pods-ozousan/Pods-ozousan.debug.xcconfig"; sourceTree = "<group>"; };
+		4A66DB1370C8D1EA3F73C820 /* Pods_ozousan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ozousan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66221C4B2681949900BBE8FB /* UiImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiImage.swift; sourceTree = "<group>"; };
+		6632610C2681E23100CFFD72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6632610E2681E26800CFFD72 /* TabBarViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewView.swift; sourceTree = "<group>"; };
+		663261132681E2ED00CFFD72 /* SecoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecoundView.swift; sourceTree = "<group>"; };
+		66439CA9267C530B009C3760 /* ozousan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ozousan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66439CAC267C530B009C3760 /* ozousanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ozousanApp.swift; sourceTree = "<group>"; };
+		66439CAE267C530B009C3760 /* QiitaContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaContentView.swift; sourceTree = "<group>"; };
+		66439CB0267C530C009C3760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66439CB3267C530C009C3760 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		66439CB5267C530C009C3760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66476951268193920017CBCD /* modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modal.swift; sourceTree = "<group>"; };
+		66476953268194340017CBCD /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		6658EB192680C357007ED1DD /* URLImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageViewModel.swift; sourceTree = "<group>"; };
+		668187972682D101000A68A7 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		668187992682D114000A68A7 /* FourthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthView.swift; sourceTree = "<group>"; };
+		6681879B2682DA44000A68A7 /* PixabayAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayAPI.swift; sourceTree = "<group>"; };
+		6681879D2682DAF4000A68A7 /* PixabayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayViewModel.swift; sourceTree = "<group>"; };
+		6681879F2682DB37000A68A7 /* PixabayApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayApiRepository.swift; sourceTree = "<group>"; };
+		66A2FA78268036180063828E /* QiitaApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaApiRepository.swift; sourceTree = "<group>"; };
+		66A2FA7E268036B70063828E /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		66AA7986268C315800D75775 /* samplecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = samplecode.swift; sourceTree = "<group>"; };
+		66B78FB026806BC600D68A0A /* QiitaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaViewModel.swift; sourceTree = "<group>"; };
+		66C8D6DE267E00B6001251E7 /* TodoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoContentView.swift; sourceTree = "<group>"; };
+		66CA9DA42682CD2C006B097E /* GridTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTestView.swift; sourceTree = "<group>"; };
+		66D828DD2681ABDA009BB56E /* QiitaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaCell.swift; sourceTree = "<group>"; };
+		66D828DF2681B3C7009BB56E /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66439CA6267C530B009C3760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668187A8268323B2000A68A7 /* Kingfisher in Frameworks */,
+				668187A526830CE7000A68A7 /* QGrid in Frameworks */,
+				9D5FFCA3063F3BC571C957E0 /* Pods_ozousan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03CBF6C9DE715BDAF7C94DB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34A5D8F082B07835D060B12D /* Pods-ozousan.debug.xcconfig */,
+				30936BE7937057AB12003845 /* Pods-ozousan.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		663261122681E27F00CFFD72 /* module */ = {
+			isa = PBXGroup;
+			children = (
+				66476951268193920017CBCD /* modal.swift */,
+				66476953268194340017CBCD /* Indicator.swift */,
+				66221C4B2681949900BBE8FB /* UiImage.swift */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		66439CA0267C530B009C3760 = {
+			isa = PBXGroup;
+			children = (
+				66439CAB267C530B009C3760 /* ozousan */,
+				66439CAA267C530B009C3760 /* Products */,
+				03CBF6C9DE715BDAF7C94DB9 /* Pods */,
+				98651E04979F78C2D8565C33 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		66439CAA267C530B009C3760 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66439CA9267C530B009C3760 /* ozousan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66439CAB267C530B009C3760 /* ozousan */ = {
+			isa = PBXGroup;
+			children = (
+				664769502681937E0017CBCD /* View */,
+				66A2FA7D268036A90063828E /* Model */,
+				66A2FA7A2680364C0063828E /* ViewModel */,
+				66A2FA77268035FE0063828E /* Repository */,
+				66439CAC267C530B009C3760 /* ozousanApp.swift */,
+				66C8D6DE267E00B6001251E7 /* TodoContentView.swift */,
+				66439CB0267C530C009C3760 /* Assets.xcassets */,
+				66439CB5267C530C009C3760 /* Info.plist */,
+				66439CB2267C530C009C3760 /* Preview Content */,
+			);
+			path = ozousan;
+			sourceTree = "<group>";
+		};
+		66439CB2267C530C009C3760 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				66439CB3267C530C009C3760 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		664769502681937E0017CBCD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				663261122681E27F00CFFD72 /* module */,
+				667C4FA22681BC4E00333935 /* Qiita */,
+				6632610C2681E23100CFFD72 /* ContentView.swift */,
+				6632610E2681E26800CFFD72 /* TabBarViewView.swift */,
+				66CA9DA42682CD2C006B097E /* GridTestView.swift */,
+				668187972682D101000A68A7 /* ThirdView.swift */,
+				668187992682D114000A68A7 /* FourthView.swift */,
+				66AA7986268C315800D75775 /* samplecode.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		667C4FA22681BC4E00333935 /* Qiita */ = {
+			isa = PBXGroup;
+			children = (
+				66439CAE267C530B009C3760 /* QiitaContentView.swift */,
+				66D828DD2681ABDA009BB56E /* QiitaCell.swift */,
+				66D828DF2681B3C7009BB56E /* SearchTextField.swift */,
+				663261132681E2ED00CFFD72 /* SecoundView.swift */,
+			);
+			path = Qiita;
+			sourceTree = "<group>";
+		};
+		66A2FA77268035FE0063828E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				66A2FA78268036180063828E /* QiitaApiRepository.swift */,
+				6681879F2682DB37000A68A7 /* PixabayApiRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		66A2FA7A2680364C0063828E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				66B78FB026806BC600D68A0A /* QiitaViewModel.swift */,
+				6658EB192680C357007ED1DD /* URLImageViewModel.swift */,
+				6681879D2682DAF4000A68A7 /* PixabayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		66A2FA7D268036A90063828E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66A2FA7E268036B70063828E /* Article.swift */,
+				6681879B2682DA44000A68A7 /* PixabayAPI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		98651E04979F78C2D8565C33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A66DB1370C8D1EA3F73C820 /* Pods_ozousan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66439CA8267C530B009C3760 /* ozousan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66439CB8267C530C009C3760 /* Build configuration list for PBXNativeTarget "ozousan" */;
+			buildPhases = (
+				EE37D535CC1D5CB3933D7BD8 /* [CP] Check Pods Manifest.lock */,
+				66439CA5267C530B009C3760 /* Sources */,
+				66439CA6267C530B009C3760 /* Frameworks */,
+				66439CA7267C530B009C3760 /* Resources */,
+				25D4FE5F21FBCB2863C9AB14 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ozousan;
+			packageProductDependencies = (
+				668187A426830CE7000A68A7 /* QGrid */,
+				668187A7268323B2000A68A7 /* Kingfisher */,
+			);
+			productName = ozousan;
+			productReference = 66439CA9267C530B009C3760 /* ozousan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66439CA1267C530B009C3760 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					66439CA8267C530B009C3760 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 66439CA4267C530B009C3760 /* Build configuration list for PBXProject "ozousan" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66439CA0267C530B009C3760;
+			packageReferences = (
+				668187A326830CE7000A68A7 /* XCRemoteSwiftPackageReference "QGrid" */,
+				668187A6268323B2000A68A7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 66439CAA267C530B009C3760 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66439CA8267C530B009C3760 /* ozousan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66439CA7267C530B009C3760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66439CB4267C530C009C3760 /* Preview Assets.xcassets in Resources */,
+				66439CB1267C530C009C3760 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25D4FE5F21FBCB2863C9AB14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ozousan/Pods-ozousan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ozousan/Pods-ozousan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ozousan/Pods-ozousan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE37D535CC1D5CB3933D7BD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ozousan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66439CA5267C530B009C3760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668187A02682DB37000A68A7 /* PixabayApiRepository.swift in Sources */,
+				66221C4C2681949900BBE8FB /* UiImage.swift in Sources */,
+				66439CAF267C530B009C3760 /* QiitaContentView.swift in Sources */,
+				66CA9DA52682CD2C006B097E /* GridTestView.swift in Sources */,
+				6632610D2681E23100CFFD72 /* ContentView.swift in Sources */,
+				66A2FA79268036180063828E /* QiitaApiRepository.swift in Sources */,
+				6632610F2681E26800CFFD72 /* TabBarViewView.swift in Sources */,
+				6681879C2682DA44000A68A7 /* PixabayAPI.swift in Sources */,
+				66AA7987268C315800D75775 /* samplecode.swift in Sources */,
+				6681879E2682DAF4000A68A7 /* PixabayViewModel.swift in Sources */,
+				668187982682D101000A68A7 /* ThirdView.swift in Sources */,
+				6681879A2682D114000A68A7 /* FourthView.swift in Sources */,
+				66A2FA7F268036B70063828E /* Article.swift in Sources */,
+				663261142681E2ED00CFFD72 /* SecoundView.swift in Sources */,
+				66476954268194340017CBCD /* Indicator.swift in Sources */,
+				66476952268193920017CBCD /* modal.swift in Sources */,
+				6658EB1A2680C357007ED1DD /* URLImageViewModel.swift in Sources */,
+				66C8D6DF267E00B6001251E7 /* TodoContentView.swift in Sources */,
+				66B78FB126806BC600D68A0A /* QiitaViewModel.swift in Sources */,
+				66D828DE2681ABDA009BB56E /* QiitaCell.swift in Sources */,
+				66439CAD267C530B009C3760 /* ozousanApp.swift in Sources */,
+				66D828E02681B3C7009BB56E /* SearchTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		66439CB6267C530C009C3760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66439CB7267C530C009C3760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66439CB9267C530C009C3760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34A5D8F082B07835D060B12D /* Pods-ozousan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ozousan/Preview Content\"";
+				DEVELOPMENT_TEAM = 84Y6X6PKWV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ozousan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.omochi.ozousan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66439CBA267C530C009C3760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30936BE7937057AB12003845 /* Pods-ozousan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ozousan/Preview Content\"";
+				DEVELOPMENT_TEAM = 84Y6X6PKWV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ozousan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.omochi.ozousan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66439CA4267C530B009C3760 /* Build configuration list for PBXProject "ozousan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66439CB6267C530C009C3760 /* Debug */,
+				66439CB7267C530C009C3760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66439CB8267C530C009C3760 /* Build configuration list for PBXNativeTarget "ozousan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66439CB9267C530C009C3760 /* Debug */,
+				66439CBA267C530C009C3760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		668187A326830CE7000A68A7 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+		668187A6268323B2000A68A7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		668187A426830CE7000A68A7 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 668187A326830CE7000A68A7 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+		668187A7268323B2000A68A7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 668187A6268323B2000A68A7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 66439CA1267C530B009C3760 /* Project object */;
+}
