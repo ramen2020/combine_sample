@@ -7,5 +7,6 @@ target 'ozousan' do
 
   # Pods for ozousan
     pod 'Alamofire'
+    pod 'RealmSwift'
 
 end
