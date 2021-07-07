@@ -11,19 +11,93 @@ import PartialSheet
 struct HalfModalSample: View {
     
     @State var showPartial = false
-
+    @State var showPopUp = false
+    
     var body: some View {
-        // PartialSheetを開くためのButtonを作成
-        Button(action: {
-            // 2. showPartialをfalseからtrueにtoggle
-            showPartial.toggle()
-        }) {
-            Text("Open PartialSheet")
+        ZStack{
+            VStack{
+                // PartialSheet
+                Button(action: {
+                    // 2. showPartialをfalseからtrueにtoggle
+                    showPartial.toggle()
+                }) {
+                    Text("Open PartialSheet")
+                }
+                // 3. showPartialがtrueになったらpartialSheetを呼び出す
+                // プロパティ変更後の値を受け取るため$マークをつける
+                .partialSheet(isPresented: $showPartial) {
+                    PartialSheetView()
+                }
+                
+                
+                // ポップアップ
+                Button(action: {
+                    // 2. showPartialをfalseからtrueにtoggle
+                    // withAnimationでふんわり出てくる
+                    withAnimation(.linear(duration: 0.1)) {
+                        showPopUp.toggle()
+                    }
+                }) {
+                    Text("Open pop up")
+                }
+            }
+            PopUpView(show: $showPopUp)
         }
-        // 3. showPartialがtrueになったらpartialSheetを呼び出す
-        // プロパティ変更後の値を受け取るため$マークをつける
-        .partialSheet(isPresented: $showPartial) {
-            PartialSheetView()
+    }
+}
+
+// ポップアップの中身
+struct PopUpView: View {
+    @Binding var show: Bool
+    
+    var body: some View {
+        ZStack {
+            if show {
+                // 背景色をグレーに。
+                Color.black.opacity(show ? 0.3 : 0).edgesIgnoringSafeArea(.all)
+                
+                VStack(alignment: .center, spacing: 0) {
+                    Text("ようこそ")
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 45, alignment: .center)
+                        .font(Font.system(size: 23, weight: .semibold))
+                        .foregroundColor(Color.black)
+                        .padding()
+                    
+                    HStack{
+                        Button(action: {
+                            withAnimation(.linear(duration: 0.2)) {
+                                show = false
+                            }
+                        }, label: {
+                            Text("NG")
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 54, alignment: .center)
+                                .foregroundColor(Color.black)
+                                .background(Color.white)
+                                .font(Font.system(size: 23, weight: .semibold))
+                        }).buttonStyle(PlainButtonStyle())
+                        Button(action: {
+                            withAnimation(.linear(duration: 0.2)) {
+                                show = false
+                            }
+                        }, label: {
+                            Text("OK")
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 54, alignment: .center)
+                                .foregroundColor(Color.white)
+                                .background(Color.black)
+                                .font(Font.system(size: 23, weight: .semibold))
+                        }).buttonStyle(PlainButtonStyle())
+                    }
+                }
+                .border(Color.white, width: 2)
+                .background(Color.white)
+            }
+        }.onTapGesture {
+            withAnimation(.linear(duration: 0.2)) {
+                show.toggle()
+            }
         }
     }
 }
