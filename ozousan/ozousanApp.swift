@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import PartialSheet
+
 
 @main
 struct ozousanApp: App {
+    
+    let sheetManager: PartialSheetManager = PartialSheetManager()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(sheetManager)
         }
     }
 }

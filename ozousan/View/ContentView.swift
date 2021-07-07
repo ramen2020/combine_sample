@@ -11,6 +11,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             TabView {
+                HalfModalSample()
+                    .tabItem {
+                        Label("PopUp", systemImage: "cloud.bolt.rain.fill")
+                    }
+
                 QiitaContentView()
                     .tabItem {
                         Label("qiita", systemImage: "gamecontroller")
@@ -19,11 +24,6 @@ struct ContentView: View {
                 QiitaFavoriteContentView()
                     .tabItem {
                         Label("favorite", systemImage: "star")
-                    }
-                
-                WebView(urlString: "")
-                    .tabItem {
-                        Label("webview", systemImage: "star")
                     }
             }
             .environmentObject(QiitaViewModel())
@@ -39,7 +39,7 @@ struct ContentView: View {
                             .padding()
                     })
                 })
-        }
+        }.addPartialSheet()
     }
 }
 
